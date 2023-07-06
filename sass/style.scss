@@ -1,0 +1,396 @@
+@use './colors';
+@use './components' as *;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-padding-top: 66px;
+}
+
+body {
+	font-family: 'Ysabeau Office', sans-serif;
+	background-color: rgb(71, 59, 59);
+}
+
+// NAV
+
+.navbar {
+	background-color: rgb(49, 49, 49);
+	z-index: 1;
+	img {
+		width: 150px;
+		height: auto;
+	}
+
+	.navbar-nav {
+		.nav-link {
+			color: colors.$font-color;
+			font-size: 1.6rem;
+			padding: 1em;
+		}
+
+		.nav-link:hover {
+			color: colors.$main-color;
+		}
+		.active {
+			color: colors.$main-color;
+		}
+	}
+
+	button {
+		color: colors.$font-color;
+		padding: 1.4em;
+		margin: 0 1em;
+		font-size: 1.8rem;
+	}
+}
+
+//HEADER
+
+header {
+	h1 {
+		font-size: 4.8rem;
+	}
+
+	p {
+		font-size: 2.4rem;
+	}
+
+	.hero-image {
+		position: relative;
+		height: 100vh;
+		top: 0;
+		background-image: url('../img/clothes-small.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			color: colors.$font-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			z-index: 5;
+			padding: 10px;
+			text-align: center;
+		}
+
+		&__bg {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(42, 17, 0, 0.7);
+			z-index: -10;
+		}
+	}
+}
+
+.brands {
+	background-color: colors.$back-color;
+	padding: 2em 0;
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+	}
+
+	&__text {
+		margin-bottom: 2em;
+	}
+
+	&__text,
+	.colection__text {
+		position: relative;
+		color: colors.$main-color;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 5px;
+		z-index: 0;
+
+		h3,
+		h2 {
+			display: inline;
+			background-color: colors.$back-color;
+			padding: 0 0.3em;
+		}
+
+		.line-before,
+		.line-after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			height: 2px;
+			background-color: colors.$main-color;
+			z-index: -1;
+		}
+
+		.line-before {
+			left: 0;
+		}
+
+		.line-after {
+			right: 0;
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		&-item {
+			background-size: cover;
+			background-position: center;
+			margin: 2em 4em;
+
+			img {
+				width: 150px;
+				height: auto;
+				transition: transform 0.3s;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+	&__under {
+		text-align: center;
+
+		&-text {
+			color: colors.$backText-color;
+			font-size: 1.4rem;
+			margin: 2em;
+			text-transform: uppercase;
+		}
+	}
+	// COLECTION
+
+	.colection {
+		&__text {
+			margin-bottom: 2em;
+		}
+
+		&__box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+
+			&-item {
+				background-size: cover;
+				background-position: center;
+				width: 250px;
+				height: 250px;
+				margin: 4em;
+				box-shadow: 7px 7px 10px black;
+				background-color: colors.$card-color;
+				border-radius: 5px;
+				transition: transform 0.3s;
+
+				.img-card {
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					width: 250px;
+					height: 150px;
+				}
+
+				&:hover {
+					transform: scale(0.9);
+				}
+			}
+
+			&-title {
+				padding-top: 0.3em;
+				font-size: 2rem;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: colors.$backText-color;
+			}
+			&-description {
+				padding-bottom: 0.3em;
+				font-size: 1.2rem;
+				text-align: center;
+				color: colors.$backText-color;
+			}
+		}
+	}
+}
+
+//ABOUTUS
+
+.aboutus {
+	h2 {
+		font-size: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-bottom: 4em;
+	}
+
+	p {
+		font-size: 1.5rem;
+		width: 80%;
+	}
+
+	position: relative;
+	top: 0;
+	background-image: url('../img/aboutus-small.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+		height: 100%;
+		color: colors.$font-color;
+		z-index: 5;
+		padding-top: 8em;
+		text-align: center;
+		padding-bottom: 10em;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(42, 17, 0, 0.5);
+		z-index: -10;
+	}
+}
+
+//CUSTOMERs
+
+.customers {
+     
+	background-color: colors.$back-color;
+	padding: 2em 0;
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	&__text {
+		position: relative;
+		color: colors.$main-color;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 5px;
+		z-index: 0;
+
+		
+		h2 {
+			display: inline;
+			background-color: colors.$back-color;
+			padding: 0 0.3em;
+		}
+
+		.line-before,
+		.line-after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			height: 2px;
+			background-color: colors.$main-color;
+			z-index: -1;
+		}
+
+		.line-before {
+			left: 0;
+		}
+
+		.line-after {
+			right: 0;
+		}
+	}
+      
+	&__box {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-top: 2em;
+		&-item {
+			
+
+			img {
+				width: 120px;
+				height: auto;
+				
+			}
+		}
+	}
+	
+}
+
+
+//CONTACT US 
+
+.contact {
+	position: relative;
+	top: 0;
+	background-image: url('../img/contact-small.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+ 
+	h2 {
+		font-size: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 2em 0;
+	}
+
+	p {
+		font-size: 1.5rem;
+		width: 80%;
+		padding-top: 0.5em;
+	}
+	
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		color: colors.$font-color;
+		z-index: 5;
+		padding: 10px;
+		text-align: center;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(42, 17, 0, 0.7);
+		z-index: -10;
+	}
+}
+
+@import './small';
+@import './large';

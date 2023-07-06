@@ -1,0 +1,125 @@
+@media (min-width: 992px) {
+	header {
+
+        h1 {
+         font-size: 4.8rem;
+     
+        }
+    
+        p{
+        font-size: 2.4rem;
+        }
+    
+    
+        .hero-image {
+            &__text {
+                padding: 10px;
+
+            }
+
+        }
+    }
+
+    .brands {
+
+ 
+        h3 {
+            font-size: 2.8rem;
+        }
+
+        h2{
+            font-size: 3.2rem; 
+            
+        }
+
+        &__box {
+            &-item {
+                margin: 4.5em;
+            }
+            img {
+                width: 300px;
+
+            }
+            
+        }
+        &__under {
+    
+            &-text {
+                font-size: 2.4rem;
+                
+            }
+           }
+        .colection {
+
+           
+
+            &__box {
+    
+                &-item {
+                     width: 300px;
+                     height: 300px;
+                     margin: 5em;
+    
+                     .img-card {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+    
+                &-title {
+                    padding-top: 0.3em;
+                    font-size: 2.4rem;
+                }
+                &-description {
+                    padding-bottom: 0.3em;
+                    font-size: 1.8rem;
+                }
+    
+            }
+           }
+    
+    }
+
+    .aboutus {
+        
+
+        h2 {
+            font-size: 3.2rem;
+        }
+    
+        p {
+            font-size: 2.4rem;
+            width: 60%;
+        }
+    
+       
+    
+    }
+
+    .customers {
+     
+       
+    
+        h2 {
+            font-size: 3.2rem; 
+        }
+    
+    
+          
+        &__box {
+            width: 60%;
+            
+            &-item {
+                margin: 1em;
+    
+                img {
+                    width: 200px;
+                    
+                }
+            }
+        }
+        
+    }
+	
+}
+
