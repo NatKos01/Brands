@@ -131,10 +131,10 @@ header .hero-image__bg {
 .brands__box-item {
   background-size: cover;
   background-position: center;
-  margin: 2em 4em;
+  margin: 1.5em 4em;
 }
 .brands__box-item img {
-  width: 150px;
+  width: 100px;
   height: auto;
   transition: transform 0.3s;
 }
@@ -308,14 +308,6 @@ header .hero-image__bg {
   z-index: -10;
 }
 
-@media (min-width: 400px) {
-  .customers h2 {
-    font-size: 2.8rem;
-  }
-  .customers__box-item img {
-    width: 150px;
-  }
-}
 @media (min-width: 500px) {
   .aboutus {
     background-image: url("../img/aboutus-big.jpg");
@@ -344,10 +336,10 @@ header .hero-image__bg {
     font-size: 2.8rem;
   }
   .brands__box-item {
-    margin: 4em;
+    margin: 1.5em 4em;
   }
   .brands__box-item img {
-    width: 200px;
+    width: 150px;
   }
   .brands__under-text {
     font-size: 1.8rem;
@@ -388,10 +380,10 @@ header .hero-image__bg {
     font-size: 3.2rem;
   }
   .brands__box-item {
-    margin: 4.5em;
+    margin: 2.5em 3em;
   }
   .brands__box img {
-    width: 300px;
+    width: 180px;
   }
   .brands__under-text {
     font-size: 2.4rem;
