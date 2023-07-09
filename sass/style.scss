@@ -9,7 +9,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-padding-top: 66px;
+	scroll-padding-top: 56px;
 }
 
 body {
@@ -103,25 +103,16 @@ header {
 	h2 {
 		font-size: 2rem;
 	}
-
-	h3 {
-		font-size: 1.8rem;
-	}
-
-	&__text {
-		margin-bottom: 2em;
-	}
-
-	&__text,
-	.colection__text {
+	
+	&__text  {
 		position: relative;
 		color: colors.$main-color;
 		text-transform: uppercase;
+		margin-bottom: 2em;
 		text-align: center;
 		letter-spacing: 5px;
 		z-index: 0;
 
-		h3,
 		h2 {
 			display: inline;
 			background-color: colors.$back-color;
@@ -179,56 +170,98 @@ header {
 			text-transform: uppercase;
 		}
 	}
-	// COLECTION
+	
+}
 
-	.colection {
-		&__text {
-			margin-bottom: 2em;
+// COLECTION
+
+.colection {
+   
+	background-color: colors.$back-color;
+	padding: 2em 0;
+
+	h2 {
+		font-size: 2rem;
+	}
+        
+
+	&__text {
+		position: relative;
+		color: colors.$main-color;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 5px;
+		z-index: 0;
+		margin-bottom: 2em;
+	
+		h2 {
+			display: inline;
+			background-color: colors.$back-color;
+			padding: 0 0.3em;
 		}
 
-		&__box {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
+		.line-before,
+		.line-after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			height: 2px;
+			background-color: colors.$main-color;
+			z-index: -1;
+		}
 
-			&-item {
-				background-size: cover;
-				background-position: center;
+		.line-before {
+			left: 0;
+		}
+
+		.line-after {
+			right: 0;
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		&-item {
+			background-size: cover;
+			background-position: center;
+			width: 250px;
+			height: 250px;
+			margin: 4em;
+			box-shadow: 7px 7px 10px black;
+			background-color: colors.$card-color;
+			border-radius: 5px;
+			transition: transform 0.3s;
+
+			.img-card {
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
 				width: 250px;
-				height: 250px;
-				margin: 4em;
-				box-shadow: 7px 7px 10px black;
-				background-color: colors.$card-color;
-				border-radius: 5px;
-				transition: transform 0.3s;
-
-				.img-card {
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
-					width: 250px;
-					height: 150px;
-				}
-
-				&:hover {
-					transform: scale(0.9);
-				}
+				height: 150px;
 			}
 
-			&-title {
-				padding-top: 0.3em;
-				font-size: 2rem;
-				text-align: center;
-				text-transform: uppercase;
-				font-weight: bold;
-				color: colors.$backText-color;
+			&:hover {
+				transform: scale(0.9);
 			}
-			&-description {
-				padding-bottom: 0.3em;
-				font-size: 1.2rem;
-				text-align: center;
-				color: colors.$backText-color;
-			}
+		}
+
+		&-title {
+			padding-top: 0.3em;
+			font-size: 2rem;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: colors.$backText-color;
+		}
+		&-description {
+			padding-bottom: 0.3em;
+			font-size: 1.2rem;
+			text-align: center;
+			color: colors.$backText-color;
 		}
 	}
 }
@@ -280,70 +313,70 @@ header {
 
 //CUSTOMERs
 
-.customers {
+// .customers {
      
-	background-color: colors.$back-color;
-	padding: 2em 0;
+// 	background-color: colors.$back-color;
+// 	padding: 2em 0;
 
-	h2 {
-		font-size: 2rem;
-	}
+// 	h2 {
+// 		font-size: 2rem;
+// 	}
 
-	&__text {
-		position: relative;
-		color: colors.$main-color;
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 5px;
-		z-index: 0;
+// 	&__text {
+// 		position: relative;
+// 		color: colors.$main-color;
+// 		text-transform: uppercase;
+// 		text-align: center;
+// 		letter-spacing: 5px;
+// 		z-index: 0;
 
 		
-		h2 {
-			display: inline;
-			background-color: colors.$back-color;
-			padding: 0 0.3em;
-		}
+// 		h2 {
+// 			display: inline;
+// 			background-color: colors.$back-color;
+// 			padding: 0 0.3em;
+// 		}
 
-		.line-before,
-		.line-after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			width: 50%;
-			height: 2px;
-			background-color: colors.$main-color;
-			z-index: -1;
-		}
+// 		.line-before,
+// 		.line-after {
+// 			content: '';
+// 			position: absolute;
+// 			top: 50%;
+// 			width: 50%;
+// 			height: 2px;
+// 			background-color: colors.$main-color;
+// 			z-index: -1;
+// 		}
 
-		.line-before {
-			left: 0;
-		}
+// 		.line-before {
+// 			left: 0;
+// 		}
 
-		.line-after {
-			right: 0;
-		}
-	}
+// 		.line-after {
+// 			right: 0;
+// 		}
+// 	}
       
-	&__box {
-		width: 80%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		margin-top: 2em;
-		&-item {
+// 	&__box {
+// 		width: 80%;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		justify-content: center;
+// 		align-items: center;
+// 		margin: 0 auto;
+// 		margin-top: 2em;
+// 		&-item {
 			
 
-			img {
-				width: 120px;
-				height: auto;
+// 			img {
+// 				width: 120px;
+// 				height: auto;
 				
-			}
-		}
-	}
+// 			}
+// 		}
+// 	}
 	
-}
+// }
 
 
 //CONTACT US 
