@@ -78,7 +78,6 @@ header .hero-image__text {
   height: 100%;
   color: rgb(251, 251, 251);
   text-transform: uppercase;
-  font-weight: bold;
   z-index: 5;
   padding: 10px;
   text-align: center;
