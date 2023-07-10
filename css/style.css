@@ -57,7 +57,7 @@ header .hero-image {
   position: relative;
   height: 100vh;
   top: 0;
-  background-image: url("../img/clothes-small.jpg");
+  background-image: url("/img/clothes-small.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -327,7 +327,7 @@ header .hero-image__bg {
     font-size: 2.4rem;
   }
   header .hero-image {
-    background-image: url("../img/clothes-big.jpg");
+    background-image: url("img/clothes-big.jpg");
   }
   header .hero-image__text {
     padding: 10px;
