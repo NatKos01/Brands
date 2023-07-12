@@ -4,7 +4,14 @@
   max-width: 1200px;
 }
 
-@keyframes aroundAnim {}
+@keyframes aroundAnim {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -20px;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -71,6 +78,7 @@ header .hero-image {
   z-index: 0;
 }
 header .hero-image__text {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,6 +89,46 @@ header .hero-image__text {
   z-index: 5;
   padding: 10px;
   text-align: center;
+}
+header .hero-image__text .btn-aboutus {
+  position: relative;
+  margin-top: 4em;
+  overflow: hidden;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  background-color: rgba(251, 251, 251, 0.2);
+  transition: transform 0.3s;
+}
+header .hero-image__text .btn-aboutus a {
+  text-decoration: none;
+  color: rgb(251, 251, 251);
+  padding: 0.3em;
+  font-size: 1.8rem;
+}
+header .hero-image__text .btn-aboutus::before {
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  content: "";
+  width: 10px;
+  height: 200%;
+  rotate: 40deg;
+  opacity: 50%;
+  background-color: rgb(251, 251, 251);
+  transition: left 0.3s;
+}
+header .hero-image__text .btn-aboutus:hover {
+  transform: scale(1.2);
+}
+header .hero-image__text .btn-aboutus:hover::before {
+  left: 175px;
+}
+header .hero-image__text .startPage {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3em;
+  font-size: 2rem;
+  animation: aroundAnim 1.2s ease-in-out 1s infinite alternate;
 }
 header .hero-image__bg {
   position: absolute;
@@ -385,6 +433,16 @@ header .hero-image__bg {
   header .hero-image__text {
     padding: 10px;
   }
+  header .hero-image__text .btn-aboutus a {
+    font-size: 2rem;
+  }
+  header .hero-image__text .btn-aboutus::before {
+    left: -30px;
+  }
+  header .hero-image__text .startPage {
+    margin-bottom: 2em;
+    font-size: 2.2rem;
+  }
   .brands h2 {
     font-size: 2.8rem;
   }
@@ -430,7 +488,16 @@ header .hero-image__bg {
     font-size: 2.4rem;
   }
   header .hero-image__text {
-    padding: 10px;
+    padding: 2em;
+  }
+  header .hero-image__text .btn-aboutus a {
+    font-size: 2.4rem;
+  }
+  header .hero-image__text .btn-aboutus::before {
+    left: -30px;
+  }
+  header .hero-image__text .startPage {
+    font-size: 2.6rem;
   }
   .brands h2 {
     font-size: 3.2rem;

@@ -15,8 +15,23 @@
     
         .hero-image {
             &__text {
-                padding: 10px;
+                      padding: 2em;
+                .btn-aboutus {
 
+                    a {
+                        font-size: 2.4rem;
+                    }
+    
+                    &::before {
+                        
+                        left: -30px;
+                       
+                    }
+                }
+    
+                .startPage {
+                   font-size: 2.6rem;
+                }
             }
 
         }

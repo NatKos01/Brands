@@ -8,5 +8,11 @@
 
 
 @keyframes aroundAnim {
-	
+	from {
+		bottom: 0;
+	}
+
+	to {
+		bottom: -20px;
+	}
 }
