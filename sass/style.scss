@@ -55,18 +55,18 @@ body {
 header {
 	h1 {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 4.8rem;
+		font-size: 4rem;
 		font-weight: bold;
 		letter-spacing: 2px;
 
 		span {
 			letter-spacing: 5px;
-			font-size: 3.6rem;
+			font-size: 2.8rem;
 		}
 	}
 
 	p {
-		font-size: 2.4rem;
+		font-size: 1.6rem;
 	}
 
 	.hero-image {
@@ -151,21 +151,28 @@ header {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		&-item {
-			background-size: cover;
-			background-position: center;
-			margin: 1.5em 4em;
 
-			img {
-				width: 100px;
-				height: auto;
-				transition: transform 0.3s;
+		.carousel {
 
-				&:hover {
-					transform: scale(1.2);
+			.element{
+				margin: 3em;
+				 
+			}
+
+
+			&-item {
+				background-size: cover;
+				background-position: center;
+				margin: 1.5em 4em;
+	
+				img {
+					width: 100px;
+					height: auto;
+					margin: 2em;
 				}
 			}
 		}
+		
 	}
 	&__under {
 		text-align: center;
@@ -430,22 +437,40 @@ header {
 					text-transform: uppercase;
 				}
 
-				.facebook {
+				// .facebook {
 					
-					a{
-						color: #1299f6;
-					}
-				}
+				// 	a{
+				// 		color: #1299f6;
+				// 		transition: color 0.3s;
+				// 	}
+				// 	transition: transform 0.3s;
+				// 	&:hover {
 
-				.instagram {
-					a {
-						color: rgb(227,91,57);
-					}
-				}
+				// 		a{
+				// 			color: colors.$font-color;
+				// 		}
+				// 		transform: scale(1.2);
+				// 	}
+				// }
 
-				.fa-brands {
-					margin-right: 0.3em;
-				}
+				// .instagram {
+				// 	a {
+				// 		color: rgb(227,91,57);
+				// 		transition: color 0.3s;
+				// 	}
+
+				// 	transition: transform 0.3s;
+				// 	&:hover {
+				// 		a{
+				// 			color: colors.$font-color;
+				// 		}
+				// 		transform: scale(1.2);
+				// 	}
+				// }
+
+				// .fa-brands {
+				// 	margin-right: 0.3em;
+				// }
 			}
 		}
 	}

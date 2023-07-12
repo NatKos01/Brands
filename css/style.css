@@ -49,16 +49,16 @@ body {
 
 header h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
 header h1 span {
   letter-spacing: 5px;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 header p {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 header .hero-image {
   position: relative;
@@ -134,18 +134,18 @@ header .hero-image__bg {
   justify-content: center;
   align-items: center;
 }
-.brands__box-item {
+.brands__box .carousel .element {
+  margin: 3em;
+}
+.brands__box .carousel-item {
   background-size: cover;
   background-position: center;
   margin: 1.5em 4em;
 }
-.brands__box-item img {
+.brands__box .carousel-item img {
   width: 100px;
   height: auto;
-  transition: transform 0.3s;
-}
-.brands__box-item img:hover {
-  transform: scale(1.2);
+  margin: 2em;
 }
 .brands__under {
   text-align: center;
@@ -317,15 +317,6 @@ header .hero-image__bg {
 .contact__text-box-item .name {
   text-transform: uppercase;
 }
-.contact__text-box-item .facebook a {
-  color: #1299f6;
-}
-.contact__text-box-item .instagram a {
-  color: rgb(227, 91, 57);
-}
-.contact__text-box-item .fa-brands {
-  margin-right: 0.3em;
-}
 .contact__bg {
   position: absolute;
   top: 0;
@@ -380,10 +371,13 @@ header .hero-image__bg {
 }
 @media (min-width: 768px) {
   header h1 {
-    font-size: 4.8rem;
+    font-size: 4.4rem;
+  }
+  header h1 span {
+    font-size: 3.2rem;
   }
   header p {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   header .hero-image {
     background-image: url("../img/clothes-big.jpg");
@@ -394,10 +388,10 @@ header .hero-image__bg {
   .brands h2 {
     font-size: 2.8rem;
   }
-  .brands__box-item {
+  .brands__box .carousel-item {
     margin: 1.5em 4em;
   }
-  .brands__box-item img {
+  .brands__box .carousel-item img {
     width: 150px;
   }
   .brands__under-text {
@@ -429,6 +423,9 @@ header .hero-image__bg {
   header h1 {
     font-size: 4.8rem;
   }
+  header h1 span {
+    font-size: 3.6rem;
+  }
   header p {
     font-size: 2.4rem;
   }
@@ -438,10 +435,10 @@ header .hero-image__bg {
   .brands h2 {
     font-size: 3.2rem;
   }
-  .brands__box-item {
+  .brands__box .carousel-item {
     margin: 2.5em 3em;
   }
-  .brands__box img {
+  .brands__box .carousel img {
     width: 180px;
   }
   .brands__under-text {
