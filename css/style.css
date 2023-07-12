@@ -134,18 +134,18 @@ header .hero-image__bg {
   justify-content: center;
   align-items: center;
 }
-.brands__box .carousel .element {
-  margin: 3em;
-}
-.brands__box .carousel-item {
+.brands__box-item {
   background-size: cover;
   background-position: center;
   margin: 1.5em 4em;
 }
-.brands__box .carousel-item img {
+.brands__box-item img {
   width: 100px;
   height: auto;
-  margin: 2em;
+  transition: transform 0.3s;
+}
+.brands__box-item img:hover {
+  transform: scale(1.2);
 }
 .brands__under {
   text-align: center;
@@ -388,10 +388,10 @@ header .hero-image__bg {
   .brands h2 {
     font-size: 2.8rem;
   }
-  .brands__box .carousel-item {
+  .brands__box-item {
     margin: 1.5em 4em;
   }
-  .brands__box .carousel-item img {
+  .brands__box-item img {
     width: 150px;
   }
   .brands__under-text {
@@ -435,10 +435,13 @@ header .hero-image__bg {
   .brands h2 {
     font-size: 3.2rem;
   }
-  .brands__box .carousel-item {
+  .brands__box {
+    margin: 5em;
+  }
+  .brands__box-item {
     margin: 2.5em 3em;
   }
-  .brands__box .carousel img {
+  .brands__box img {
     width: 180px;
   }
   .brands__under-text {

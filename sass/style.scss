@@ -151,28 +151,21 @@ header {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		&-item {
+			background-size: cover;
+			background-position: center;
+			margin: 1.5em 4em;
 
-		.carousel {
+			img {
+				width: 100px;
+				height: auto;
+				transition: transform 0.3s;
 
-			.element{
-				margin: 3em;
-				 
-			}
-
-
-			&-item {
-				background-size: cover;
-				background-position: center;
-				margin: 1.5em 4em;
-	
-				img {
-					width: 100px;
-					height: auto;
-					margin: 2em;
+				&:hover {
+					transform: scale(1.2);
 				}
 			}
 		}
-		
 	}
 	&__under {
 		text-align: center;
