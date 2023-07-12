@@ -46,6 +46,26 @@
 
     }
 
+    @media (min-width: 510px) {
+        .contact {
+
+            &__text {
+
+                &-box {
+                    flex-direction: row;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        height: 50%;
+                        width: 1px;
+                        background-color: colors.$font-color;
+                    }
+                }
+            }
+        }
+    }
+
 @media (min-width: 768px) {
 	header {
 
@@ -123,29 +143,42 @@
     
     }
 
-    .customers {
+    // .customers {
      
        
     
-        h2 {
-            font-size: 2.8rem; 
-        }
+    //     h2 {
+    //         font-size: 2.8rem; 
+    //     }
     
     
           
-        &__box {
-            width: 70%;
+    //     &__box {
+    //         width: 70%;
             
-            &-item {
+    //         &-item {
                 
     
-                img {
-                    width: 170px;
+    //             img {
+    //                 width: 170px;
                     
-                }
-            }
-        }
+    //             }
+    //         }
+    //     }
         
+    // }
+
+
+    .contact {
+        background-image: url('../img/contact-big.jpg');
+    
+        h2 {
+            font-size: 2.8rem;
+        }
+    
+        p {
+            font-size: 2rem;
+        }
     }
 
     

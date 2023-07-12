@@ -110,8 +110,8 @@ header {
 	h2 {
 		font-size: 2rem;
 	}
-	
-	&__text  {
+
+	&__text {
 		position: relative;
 		color: colors.$main-color;
 		text-transform: uppercase;
@@ -177,20 +177,17 @@ header {
 			text-transform: uppercase;
 		}
 	}
-	
 }
 
 // COLECTION
 
 .colection {
-   
 	background-color: colors.$back-color;
 	padding: 2em 0;
 
 	h2 {
 		font-size: 2rem;
 	}
-        
 
 	&__text {
 		position: relative;
@@ -200,7 +197,7 @@ header {
 		letter-spacing: 5px;
 		z-index: 0;
 		margin-bottom: 2em;
-	
+
 		h2 {
 			display: inline;
 			background-color: colors.$back-color;
@@ -299,7 +296,7 @@ header {
 	&__text {
 		display: flex;
 		flex-direction: column;
-        align-items: center;
+		align-items: center;
 		height: 100%;
 		color: colors.$font-color;
 		z-index: 5;
@@ -321,7 +318,7 @@ header {
 //CUSTOMERs
 
 // .customers {
-     
+
 // 	background-color: colors.$back-color;
 // 	padding: 2em 0;
 
@@ -337,7 +334,6 @@ header {
 // 		letter-spacing: 5px;
 // 		z-index: 0;
 
-		
 // 		h2 {
 // 			display: inline;
 // 			background-color: colors.$back-color;
@@ -363,7 +359,7 @@ header {
 // 			right: 0;
 // 		}
 // 	}
-      
+
 // 	&__box {
 // 		width: 80%;
 // 		display: flex;
@@ -373,20 +369,18 @@ header {
 // 		margin: 0 auto;
 // 		margin-top: 2em;
 // 		&-item {
-			
 
 // 			img {
 // 				width: 120px;
 // 				height: auto;
-				
+
 // 			}
 // 		}
 // 	}
-	
+
 // }
 
-
-//CONTACT US 
+//CONTACT US
 
 .contact {
 	position: relative;
@@ -396,7 +390,7 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
- 
+
 	h2 {
 		font-size: 2rem;
 		text-transform: uppercase;
@@ -406,20 +400,54 @@ header {
 
 	p {
 		font-size: 1.5rem;
-		width: 80%;
-		padding-top: 0.5em;
 	}
-	
+
+	a {
+		text-decoration: none;
+	}
+
 	&__text {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
 		color: colors.$font-color;
 		z-index: 5;
-		padding: 10px;
+		padding: 1em;
 		text-align: center;
+
+		&-box {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+
+			&-item {
+				margin: 5em;
+                
+				.fa-solid {
+					margin-right: 0.3em;
+				}
+				.name {
+					text-transform: uppercase;
+				}
+
+				.facebook {
+					
+					a{
+						color: #1299f6;
+					}
+				}
+
+				.instagram {
+					a {
+						color: rgb(227,91,57);
+					}
+				}
+
+				.fa-brands {
+					margin-right: 0.3em;
+				}
+			}
+		}
 	}
 
 	&__bg {
@@ -429,6 +457,28 @@ header {
 		height: 100%;
 		background-color: rgba(42, 17, 0, 0.7);
 		z-index: -10;
+	}
+}
+
+.footer {
+	background-color: colors.$backText-color;
+	height: 60px;
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1.8em;
+		color: colors.$font-color;
+	    height: 100%;
+		padding: 1em;
+		text-align: center;
+
+		span {
+			margin-right: 0.3em;
+		}
 	}
 }
 

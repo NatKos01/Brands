@@ -97,29 +97,37 @@
     
     }
 
-    .customers {
+    // .customers {
      
        
     
-        h2 {
-            font-size: 3.2rem; 
-        }
+    //     h2 {
+    //         font-size: 3.2rem; 
+    //     }
     
     
           
-        &__box {
-            width: 60%;
+    //     &__box {
+    //         width: 60%;
             
-            &-item {
-                margin: 1em;
+    //         &-item {
+    //             margin: 1em;
     
-                img {
-                    width: 200px;
+    //             img {
+    //                 width: 200px;
                     
-                }
-            }
-        }
+    //             }
+    //         }
+    //     }
         
+    // }
+
+    .contact {
+    
+        h2 {
+            font-size: 3.2rem;
+        }
+
     }
 	
 }

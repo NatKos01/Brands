@@ -291,19 +291,40 @@ header .hero-image__bg {
 }
 .contact p {
   font-size: 1.5rem;
-  width: 80%;
-  padding-top: 0.5em;
+}
+.contact a {
+  text-decoration: none;
 }
 .contact__text {
+  color: rgb(251, 251, 251);
+  z-index: 5;
+  padding: 1em;
+  text-align: center;
+}
+.contact__text-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  color: rgb(251, 251, 251);
-  z-index: 5;
-  padding: 10px;
-  text-align: center;
+}
+.contact__text-box-item {
+  margin: 5em;
+}
+.contact__text-box-item .fa-solid {
+  margin-right: 0.3em;
+}
+.contact__text-box-item .name {
+  text-transform: uppercase;
+}
+.contact__text-box-item .facebook a {
+  color: #1299f6;
+}
+.contact__text-box-item .instagram a {
+  color: rgb(227, 91, 57);
+}
+.contact__text-box-item .fa-brands {
+  margin-right: 0.3em;
 }
 .contact__bg {
   position: absolute;
@@ -312,6 +333,26 @@ header .hero-image__bg {
   height: 100%;
   background-color: rgba(42, 17, 0, 0.7);
   z-index: -10;
+}
+
+.footer {
+  background-color: rgba(49, 49, 49, 0.7);
+  height: 60px;
+}
+.footer__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8em;
+  color: rgb(251, 251, 251);
+  height: 100%;
+  padding: 1em;
+  text-align: center;
+}
+.footer__text span {
+  margin-right: 0.3em;
 }
 
 @media (min-width: 500px) {
@@ -323,6 +364,18 @@ header .hero-image__bg {
   }
   .aboutus p {
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 510px) {
+  .contact__text-box {
+    flex-direction: row;
+  }
+  .contact__text-box::after {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 1px;
+    background-color: rgb(251, 251, 251);
   }
 }
 @media (min-width: 768px) {
@@ -362,14 +415,14 @@ header .hero-image__bg {
   .aboutus p {
     font-size: 2.4rem;
   }
-  .customers h2 {
+  .contact {
+    background-image: url("../img/contact-big.jpg");
+  }
+  .contact h2 {
     font-size: 2.8rem;
   }
-  .customers__box {
-    width: 70%;
-  }
-  .customers__box-item img {
-    width: 170px;
+  .contact p {
+    font-size: 2rem;
   }
 }
 @media (min-width: 992px) {
@@ -421,16 +474,7 @@ header .hero-image__bg {
     font-size: 2.4rem;
     width: 60%;
   }
-  .customers h2 {
+  .contact h2 {
     font-size: 3.2rem;
-  }
-  .customers__box {
-    width: 60%;
-  }
-  .customers__box-item {
-    margin: 1em;
-  }
-  .customers__box-item img {
-    width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
