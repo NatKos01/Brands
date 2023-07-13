@@ -123,7 +123,7 @@ header .hero-image__text .btn-aboutus:hover::before {
 header .hero-image__text .startPage {
   position: absolute;
   bottom: 0;
-  margin-bottom: 4em;
+  margin-bottom: 7em;
   font-size: 2.4rem;
   animation: aroundAnim 1.2s ease-in-out 1s infinite alternate;
 }
@@ -440,7 +440,7 @@ header .hero-image__bg {
     left: -30px;
   }
   header .hero-image__text .startPage {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
     font-size: 2.6rem;
   }
   .brands h2 {
@@ -498,6 +498,7 @@ header .hero-image__bg {
   }
   header .hero-image__text .startPage {
     font-size: 3.2rem;
+    margin-bottom: 5em;
   }
   .brands h2 {
     font-size: 3.2rem;
