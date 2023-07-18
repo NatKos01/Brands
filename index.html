@@ -3,27 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SS Trade</title>
   <link rel="icon" href="img/IconLogoss.png">
-  <meta name="description" content="The biggest fashion brands in the world, the best, original brands collection, shoes, apparel, accesories">
-  <meta name="keywords" content="Brands, Nike, Levis, Lacoste, Kappa, ECCO, Cross Jeans, Champion, Caterpillar, Big star, Adidas, 4f, Vans, Under Arrmour, The north face, Saucony, Salomon, Puma, Shop">
+  <meta name="description"
+    content="The biggest fashion brands in the world, the best, original brands collection, shoes, apparel, accesories">
+  <meta name="keywords"
+    content="Brands, Nike, Levis, Lacoste, Kappa, ECCO, Cross Jeans, Champion, Caterpillar, Big star, Adidas, 4f, Vans, Under Arrmour, The north face, Saucony, Salomon, Puma, Shop">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1772fdea9f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
-  <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-0">
-    <div class="container wrapper">
-      <a class="navbar-brand" href="#"><img src="img/logoss.png" alt=""></a>
+  <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-0">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><img src="img/logoss.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -41,6 +44,7 @@
       </div>
     </div>
   </nav>
+ 
 
 
   <header>
@@ -48,12 +52,12 @@
       <div class="hero-image__text">
         <h1 data-aos="zoom-in" data-aos-delay="500">SS <span>TRADE</span></h1>
         <p data-aos="fade-up" data-aos-delay="600">The biggest fashion brands in the world</p>
-        <button class="btn-aboutus" data-aos="fade-up" data-aos-delay="700">
-          <a href="#aboutus" >Meet us</a>
-        </button >
+        <button class="btn-aboutus"  data-aos="fade-up" data-aos-delay="700">
+          <a  href="#aboutus"  >Meet us</a>
+        </button>
 
         <a href="#brands" class="startPage" data-aos="fade-up"><i class="fa-solid fa-chevron-down"></i></a>
-        
+
 
       </div>
       <div class="hero-image__bg"></div>
@@ -90,7 +94,7 @@
         <img src="img/OurBrands/ECCO.png" data-aos="fade-down-right" data-aos-delay="200" alt="Logo ECCO">
       </div>
       <div class="brands__box-item">
-        <img src="img/OurBrands/Kappa.png" data-aos="fade-down-right" data-aos-delay="200"alt="Logo Kappa">
+        <img src="img/OurBrands/Kappa.png" data-aos="fade-down-right" data-aos-delay="200" alt="Logo Kappa">
       </div>
       <div class="brands__box-item">
         <img src="img/OurBrands/Lacoste.png" data-aos="fade-down-right" data-aos-delay="200" alt="Logo Lacoste">
@@ -114,10 +118,14 @@
         <img src="img/OurBrands/the-north-face.png" data-aos="fade-left" data-aos-delay="300" alt="Logo The north face">
       </div>
       <div class="brands__box-item">
-        <img src="img/OurBrands/Under Armour.png" data-aos="fade-down-left" data-aos-delay="400" alt="Logo Under Arrmour">
+        <img src="img/OurBrands/Under Armour.png" data-aos="fade-down-left" data-aos-delay="400"
+          alt="Logo Under Arrmour">
       </div>
       <div class="brands__box-item">
         <img src="img/OurBrands/Vans.png" data-aos="fade-down-left" data-aos-delay="400" alt="Logo Vans">
+      </div>
+      <div class="brands__box-item">
+        <img src="img/OurBrands/NewBalance.png" data-aos="fade-right" data-aos-delay="400" alt="Logo New Balance">
       </div>
     </div>
 
@@ -265,12 +273,13 @@
       <p class="footer__text">&copy;<span class="footer__year"></span> SS Trade</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./js/aosscript.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/aosscript.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
