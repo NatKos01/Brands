@@ -376,7 +376,7 @@ header .hero-image__bg {
 
 .footer {
   background-color: rgba(49, 49, 49, 0.7);
-  height: 60px;
+  height: 40px;
 }
 .footer__text {
   display: flex;
@@ -387,7 +387,7 @@ header .hero-image__bg {
   font-size: 1.8em;
   color: rgb(251, 251, 251);
   height: 100%;
-  padding: 1em;
+  padding: 0.3em;
   text-align: center;
 }
 .footer__text span {

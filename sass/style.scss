@@ -531,7 +531,7 @@ header {
 
 .footer {
 	background-color: colors.$backText-color;
-	height: 60px;
+	height: 40px;
 
 	&__text {
 		display: flex;
@@ -542,7 +542,7 @@ header {
 		font-size: 1.8em;
 		color: colors.$font-color;
 	    height: 100%;
-		padding: 1em;
+		padding: 0.3em;
 		text-align: center;
 
 		span {
