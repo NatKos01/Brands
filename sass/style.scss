@@ -73,7 +73,7 @@ header {
 		position: relative;
 		height: 100vh;
 		top: 0;
-		background-image: url('../img/clothes-small.jpg');
+		background-image: url('../img/pexels-ashutosh-sonwani-small.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -313,7 +313,7 @@ header {
 			color: colors.$backText-color;
 		}
 		&-description {
-			padding-bottom: 0.3em;
+			padding: 0.3em;
 			font-size: 1.2rem;
 			text-align: center;
 			color: colors.$backText-color;
@@ -328,12 +328,11 @@ header {
 		font-size: 2rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		padding-bottom: 4em;
+		padding-bottom: 2em;
 	}
 
 	p {
-		font-size: 1.5rem;
-		width: 80%;
+		padding: 0 2em;
 	}
 
 	position: relative;
@@ -354,6 +353,30 @@ header {
 		padding-top: 8em;
 		text-align: center;
 		padding-bottom: 10em;
+
+        &-info {
+			font-size: 1.5rem;
+		}
+
+	
+
+		&-item {
+			padding:1em 0;
+			width: 100%;
+
+			.icon-text { 
+				font-size: 1.2rem;
+			
+			.fa-solid {
+				text-align: center;
+				padding-bottom: 0.3em;
+			}
+		}
+			.second-info {
+				font-size: 1.2rem;
+				padding: 0 2em;
+			}
+		}
 	}
 
 	&__bg {
