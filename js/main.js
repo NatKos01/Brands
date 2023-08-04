@@ -53,6 +53,8 @@ const translations = {
         categoriesCard3: "Odzież",
         categoriesText3: "Sportowe, casualowe, eleganckie, denimowe i wiele innych.",
 
+        contactTitle: "Kontakt",
+        
     description: "Największe marki modowe na świecie, najlepsza, oryginalna kolekcja marek, buty, odzież, akcesoria",
     keywords: "Marki, Nike, Levis, Lacoste, Kappa, ECCO, Cross Jeans, Champion, Caterpillar, Big star, Adidas, 4f, Vans, Under Arrmour, The north face, Saucony, Salomon, Puma, Sklep"
     },
@@ -86,6 +88,8 @@ const translations = {
         categoriesText2: "thousands of products, accessories, and curated items.",
         categoriesCard3: "Apparel",
         categoriesText3: "Sports, casual, elegant, denim, and more.",
+
+        contactTitle: "Contact us",
 
         description: "The biggest fashion brands in the world, the best, original brands collection, shoes, apparel, accesories",
     keywords: "Brands, Nike, Levis, Lacoste, Kappa, ECCO, Cross Jeans, Champion, Caterpillar, Big star, Adidas, 4f, Vans, Under Arrmour, The north face, Saucony, Salomon, Puma, Shop"
