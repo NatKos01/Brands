@@ -47,7 +47,12 @@ body {
 .navbar .navbar-nav .active {
   color: rgb(0, 175, 105);
 }
-.navbar button {
+.navbar .navbar-nav .language {
+  padding: 1em 0.3em;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar .navbar-toggler {
   color: rgb(251, 251, 251);
   padding: 1.4em;
   margin: 0 1em;

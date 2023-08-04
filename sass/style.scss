@@ -40,9 +40,16 @@ body {
 		.active {
 			color: colors.$main-color;
 		}
+
+		.language {
+			padding: 1em 0.3em;
+			display: inline-block;
+			cursor: pointer;
+		}
+		
 	}
 
-	button {
+	.navbar-toggler {
 		color: colors.$font-color;
 		padding: 1.4em;
 		margin: 0 1em;

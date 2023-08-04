@@ -11,6 +11,7 @@
     content="The biggest fashion brands in the world, the best, original brands collection, shoes, apparel, accesories">
   <meta name="keywords"
     content="Brands, Nike, Levis, Lacoste, Kappa, ECCO, Cross Jeans, Champion, Caterpillar, Big star, Adidas, 4f, Vans, Under Arrmour, The north face, Saucony, Salomon, Puma, Shop">
+    <link rel="alternate" hreflang="pl" href="https://sstrade.com/pl">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,14 +35,18 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          <a class="nav-link" href="#brands">Our Brands</a>
-          <a class="nav-link" href="#aboutus">About Us</a>
-          <a class="nav-link" href="#categories">Categories</a>
-          <a class="nav-link" href="#contact">Contact</a>
-          <a class="nav-link" href="#">Language</a>
+          <a class="nav-link active" aria-current="page" href="#home" data-translate="navHome">Home</a>
+          <a class="nav-link" href="#brands" data-translate="navBrands">Our Brands</a>
+          <a class="nav-link" href="#aboutus" data-translate="navAbout">About Us</a>
+          <a class="nav-link" href="#categories" data-translate="navCategories">Categories</a>
+          <a class="nav-link" href="#contact" data-translate="navContact">Contact</a>
+          
+        <span class="nav-link language"id="language-switcher" onclick="setLanguage('pl')">PL</span>
+        <span class="nav-link language" id="language-switcher" onclick="setLanguage('en')">ENG</span>
+    
         </div>
       </div>
+      
     </div>
   </nav>
  
@@ -51,9 +56,9 @@
     <div id="home" class="hero-image">
       <div class="hero-image__text">
         <h1 data-aos="zoom-in" data-aos-delay="500">SS <span>TRADE</span></h1>
-        <p data-aos="fade-up" data-aos-delay="600">The biggest fashion brands in the world</p>
+        <p data-aos="fade-up" data-aos-delay="600" data-translate="homeDescription">The biggest fashion brands in the world</p>
         <button class="btn-aboutus"  data-aos="fade-up" data-aos-delay="700">
-          <a  href="#aboutus"  >Meet us</a>
+          <a  href="#aboutus"  data-translate="homeButton" >Meet us</a>
         </button>
 
         <a href="#brands" class="startPage" data-aos="fade-up"><i class="fa-solid fa-chevron-down"></i></a>
@@ -68,7 +73,7 @@
   <section class="brands" id="brands">
     <div class="brands__text">
       <span class="line-before"></span>
-      <h2>Our Brands</h2>
+      <h2 data-translate="brandsTitle">Our Brands</h2>
       <span class="line-after"></span>
     </div>
     <div class="brands__box">
@@ -130,7 +135,7 @@
     </div>
 
     <div class="brands__under">
-      <p class="brands__under-text">Thousands of different well-known brands</p>
+      <p class="brands__under-text" data-translate="brandsText">Thousands of different well-known brands</p>
     </div>
 
   </section>
@@ -138,20 +143,20 @@
 
   <section class="aboutus" id="aboutus">
     <div class="aboutus__text">
-      <h2 data-aos="fade-down-right" data-aos-delay="100">About us</h2>
-      <p class="aboutus__text-info" data-aos="fade-up-left" data-aos-delay="150">SS Trade is a distribution company that focuses on fashion, well-known lifestyle, sportswear, and street culture brands. We specialize in delivering high-quality clothing and footwear. Currently, you can find thousands of products, accessories, and curated items from brands such as Levis, The North Face, and Vans. We offer sneakers, tried-and-true classics, as well as the latest shoe models from NIKE, Jordan Brand, Adidas, and others.</p>
-      <p class="aboutus__text-info" data-aos="fade-up-left" data-aos-delay="150" >Our portfolio encompasses a wide range of products, including women's, men's, and children's clothing. Our offerings span diverse categories, including sports, casual, elegant, denim, and more.</p>
+      <h2 data-aos="fade-down-right" data-aos-delay="100" data-translate="aboutTitle">About us</h2>
+      <p class="aboutus__text-info" data-aos="fade-up" data-aos-delay="150" data-translate="aboutText1">SS Trade is a distribution company that focuses on fashion, well-known lifestyle, sportswear, and street culture brands. We specialize in delivering high-quality clothing and footwear. Currently, you can find thousands of products, accessories, and curated items from brands such as Levis, The North Face, and Vans. We offer sneakers, tried-and-true classics, as well as the latest shoe models from NIKE, Jordan Brand, Adidas, and others.</p>
+      <p class="aboutus__text-info" data-aos="fade-up" data-aos-delay="150" data-translate="aboutText2">Our portfolio encompasses a wide range of products, including women's, men's, and children's clothing. Our offerings span diverse categories, including sports, casual, elegant, denim, and more.</p>
       <div class="aboutus__text-box">
-        <div class="aboutus__text-item" data-aos="fade-up-left" data-aos-delay="150">
-          <p class ="icon-text">Support <i class="fa-solid fa-users" style="color: #fbfbfb;"></i></p>
-      <p class="second-info">We are committed to providing excellent customer service. Our sales team is always ready to assist and provide advice regarding product selection, availability, and any other order-related queries. Our clientele includes both major international retail chains and smaller private companies. Through our professional approach and top-notch service, SS Trade builds lasting relationships with its customers.</p>
+        <div class="aboutus__text-item" data-aos="fade-up" data-aos-delay="150" >
+          <p class ="icon-text" ><span>Support </span data-translate="aboutSupport"> <i class="fa-solid fa-users" style="color: #fbfbfb;"></i></p>
+      <p class="second-info" data-translate="aboutText3">We are committed to providing excellent customer service. Our sales team is always ready to assist and provide advice regarding product selection, availability, and any other order-related queries. Our clientele includes both major international retail chains and smaller private companies. Through our professional approach and top-notch service, SS Trade builds lasting relationships with its customers.</p>
     </div>
-    <div class="aboutus__text-item" data-aos="fade-up-left" data-aos-delay="150">
-      <p class ="icon-text">Time <i class="fa-solid fa-clock" style="color: #fbfbfb;"></i></p>
-      <p class="second-info">Timely deliveries are also a crucial aspect of SS Trade's operations. We understand the importance of time and make every effort to ensure that orders are fulfilled according to our customers' expectations.</p>
+    <div class="aboutus__text-item" data-aos="fade-up" data-aos-delay="150">
+      <p class ="icon-text" ><span data-translate="aboutTime">Time </span> <i class="fa-solid fa-clock" style="color: #fbfbfb;"></i></p>
+      <p class="second-info" data-translate="aboutText4">Timely deliveries are also a crucial aspect of SS Trade's operations. We understand the importance of time and make every effort to ensure that orders are fulfilled according to our customers' expectations.</p>
     </div>
     </div>
-      <p class="aboutus__text-info" data-aos="fade-up-left" data-aos-delay="300">SS Trade is a strong business partner in the clothing and footwear industry. We continuously develop our services to meet the evolving needs of our clients. Our dedication to high-quality products, professional customer support, and on-time deliveries make us a trusted partner for retail stores seeking wholesale suppliers of branded clothing.</p>
+      <p class="aboutus__text-info" data-aos="fade-up" data-aos-delay="300" data-translate="aboutText5">SS Trade is a strong business partner in the clothing and footwear industry. We continuously develop our services to meet the evolving needs of our clients. Our dedication to high-quality products, professional customer support, and on-time deliveries make us a trusted partner for retail stores seeking wholesale suppliers of branded clothing.</p>
     </div>
     <div class="aboutus__bg"></div>
   </section>
@@ -159,25 +164,25 @@
   <section class="colection" id="categories">
     <div class="colection__text">
       <span class="line-before"></span>
-      <h2>Categories</h2>
+      <h2 data-translate="categoriesTitle">Categories</h2>
       <span class="line-after"></span>
 
     </div>
     <div class="colection__box">
       <div class="colection__box-item" data-aos="flip-left" data-aos-delay="100">
         <img class="img-card" src="img/shoeBrand.jpg" alt="Shoes">
-        <p class="colection__box-title">FOOTWEAR</p>
-        <p class="colection__box-description">Sneakers, tried-and-true classics, as well as the latest shoe models.</p>
+        <p class="colection__box-title" data-translate="categoriesCard1">FOOTWEAR</p>
+        <p class="colection__box-description" data-translate="categoriesText1">Sneakers, tried-and-true classics, as well as the latest shoe models.</p>
       </div>
       <div class="colection__box-item" data-aos="flip-right" data-aos-delay="300">
         <img class="img-card" src="img/bagBrand.jpg" alt="Bag">
-        <p class="colection__box-title">Accessories</p>
-        <p class="colection__box-description">thousands of products, accessories, and curated items.</p>
+        <p class="colection__box-title" data-translate="categoriesCard2">Accessories</p>
+        <p class="colection__box-description" data-translate="categoriesText2">thousands of products, accessories, and curated items.</p>
       </div>
       <div class="colection__box-item" data-aos="flip-left" data-aos-delay="500">
         <img class="img-card" src="img/clothesBrand.jpg" alt="Apparel">
-        <p class="colection__box-title">Apparel</p>
-        <p class="colection__box-description">Sports, casual, elegant, denim, and more.</p>
+        <p class="colection__box-title" data-translate="categoriesCard3">Apparel</p>
+        <p class="colection__box-description" data-translate="categoriesText3">Sports, casual, elegant, denim, and more.</p>
       </div>
     </div>
   </section>
