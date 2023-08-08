@@ -379,7 +379,7 @@ header .hero-image__bg {
   align-items: center;
 }
 .contact__text-box-item {
-  margin: 4em;
+  margin: 3em;
 }
 .contact__text-box-item .fa-solid {
   margin-right: 0.3em;
@@ -438,18 +438,6 @@ header .hero-image__bg {
   .aboutus__text-item .second-info {
     font-size: 1.5rem;
     padding: 0 1em;
-  }
-}
-@media (min-width: 510px) {
-  .contact__text-box {
-    flex-direction: row;
-  }
-  .contact__text-box::after {
-    position: absolute;
-    content: "";
-    height: 50%;
-    width: 1px;
-    background-color: rgb(251, 251, 251);
   }
 }
 @media (min-width: 768px) {
